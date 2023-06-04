@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".DashBoardActivity">
+    <RelativeLayout
+        android:id="@+id/custom_toolbar_dashboard"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/refresh_btn"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_replay_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/signout_btn"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_replay_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/Dashboard"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAlignment="center"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_labels"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/custom_toolbar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/total_income"
+                    android:layout_alignParentLeft="true"
+                    android:text="Income"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:text="@string/income2"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:text="Expense"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/total_expense"
+                    android:layout_alignParentRight="true"
+                    android:text="000"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:text="balance"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/total_balance"
+                    android:layout_alignParentRight="true"
+                    android:text="000"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="28dp"
+
+        android:id="@+id/layout_card"
+        android:layout_below="@id/card_view_labels"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_floating_button"
+        app:cardCornerRadius="48dp"
+        android:backgroundTint="@color/red"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/add_img"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/add_img"
+                android:textColor="@color/white"
+                android:text="Add transanction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

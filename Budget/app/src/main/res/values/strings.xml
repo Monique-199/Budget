@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Budget</string>
+    <string name="enter_your_email_here">Enter your email here</string>
+    <string name="expense_manager">Expense manager</string>
+    <string name="enter_your_password_here" />
+    <string name="login">Login</string>
+    <string name="Signup" />
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="addtransanction">AddTransanction</string>
+    <string name="amount">Amount</string>
+    <string name="note">note</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="add">Add</string>
+    <string name="dashboard">dashboard</string>
+    <string name="your_note_here">your note here</string>
+    <string name="_200">200</string>
+    <string name="_10_march_2023">10 MARCH 2023</string>
+    <string name="update" />
+    <string name="Delete" />
+    <string name="Dashboard" />
+    <string name="income2">Income</string>
+</resources>

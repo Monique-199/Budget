@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    >
+    <View
+        android:id="@+id/priority_one"
+        android:layout_width="20dp"
+        android:layout_height="28dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/green_shape"/>
+    <RelativeLayout
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/note_one"
+            android:text="@string/your_note_here"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/note_one"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:id="@+id/amount_one"
+            android:textSize="20sp"
+            android:text="@string/_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/date_one"
+            android:textColor="@color/black"
+            android:layout_below="@id/amount_one"
+            android:text="@string/_10_march_2023"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

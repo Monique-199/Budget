@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:paddingRight="18dp"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Budget manager"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:id="@+id/email_login"
+
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_your_email_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/email_password"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="12dp"
+        android:id="@+id/btn_login"
+
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:onClick="forgotPasswordClicked"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/goToSignUpScreen"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:text="Already have an account? Signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>
